@@ -178,7 +178,7 @@ class Mailer {
     }
 
     /**
-     * Set the HTML message
+     * Set the HTML message.
      *
      * @param string $html
      *
@@ -191,7 +191,7 @@ class Mailer {
     }
 
     /**
-     * Set the plain-text message
+     * Set the plain-text message.
      *
      * @param string $text
      *
@@ -303,7 +303,7 @@ class Mailer {
      * @param string $address
      * @param string $name
      */
-    private function addAddress(string $key, string $address, string $name) {
+    private function addAddress(string $key, string $address, string $name = null) {
         $item['address'] = trim($address);
 
         if (null !== $name) {
